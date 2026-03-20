@@ -1,0 +1,1 @@
+yolo pose train model=C:UsersYiLanQiuDesktoptsstgenerated_modelsA0_baseline.yaml data=B:ultralyticsProjectOptimizationsrcultralytics-mainultralyticscfgdatasetscoco-pose.yaml epochs=1 project=outputs/eval/ablation name=ONE_CHECK

@@ -1,0 +1,26 @@
+[CMD] "B:\ultralytics\.venv310\Scripts\yolo.exe" pose train model=C:UsersYiLanQiuDesktoptsstgenerated_modelsA0_baseline.yaml data=B:ultralyticsProjectOptimizationsrcultralytics-mainultralyticscfgdatasetscoco-pose.yaml epochs=1 project=outputs/eval/ablation name=ONE_CHECK
+[RETURN_CODE] 1
+[STDOUT]
+
+[STDERR]
+Traceback (most recent call last):
+  File "C:\Users\YiLanQiu\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\YiLanQiu\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "B:\ultralytics\.venv310\Scripts\yolo.exe\__main__.py", line 5, in <module>
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\cfg\__init__.py", line 960, in entrypoint
+    model = YOLO(model, task=task)
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\models\yolo\model.py", line 83, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\engine\model.py", line 151, in __init__
+    self._new(model, task=task, verbose=verbose)
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\engine\model.py", line 260, in _new
+    cfg_dict = yaml_model_load(cfg)
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\nn\tasks.py", line 1770, in yaml_model_load
+    yaml_file = check_yaml(unified_path, hard=False) or check_yaml(path)
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\utils\checks.py", line 609, in check_yaml
+    return check_file(file, suffix, hard=hard)
+  File "B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\utils\checks.py", line 591, in check_file
+    raise FileNotFoundError(f"'{file}' does not exist")
+FileNotFoundError: 'C:UsersYiLanQiuDesktoptsstgenerated_modelsA0_baseline.yaml' does not exist

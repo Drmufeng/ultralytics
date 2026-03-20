@@ -1,0 +1,9 @@
+exp_id,variant,modules_on,note,data_profile,layout,train_config
+A0,baseline,-,基线模型，不启用新增模块,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A1,adown,ADown,仅启用 ADown,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A2,dyrfaup,DyRFAUp,仅启用 DyRFAUp,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A3,scsa,SCSA,仅启用 SCSA,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A4,adown+dyrfaup,"ADown,DyRFAUp",启用 ADown + DyRFAUp,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A5,adown+scsa,"ADown,SCSA",启用 ADown + SCSA,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A6,dyrfaup+scsa,"DyRFAUp,SCSA",启用 DyRFAUp + SCSA,v17,yolopose,configs/train/train_stgcn_out17.yaml
+A7,all3,"ADown,DyRFAUp,SCSA",三模块全启用,v17,yolopose,configs/train/train_stgcn_out17.yaml

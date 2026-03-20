@@ -1,0 +1,29 @@
+# 命令模板（支持批跑）
+
+# 说明：本主题固定使用 yolo pose train。
+
+# 注意：未提供模型YAML，run_commands.txt 使用占位符。；未提供数据YAML，run_commands.txt 使用占位符。
+
+# A0 baseline modules=-
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A0_baseline
+
+# A1 adown modules=ADown
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A1_adown
+
+# A2 dyrfaup modules=DyRFAUp
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A2_dyrfaup
+
+# A3 scsa modules=SCSA
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A3_scsa
+
+# A4 adown+dyrfaup modules=ADown,DyRFAUp
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A4_adown+dyrfaup
+
+# A5 adown+scsa modules=ADown,SCSA
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A5_adown+scsa
+
+# A6 dyrfaup+scsa modules=DyRFAUp,SCSA
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A6_dyrfaup+scsa
+
+# A7 all3 modules=ADown,DyRFAUp,SCSA
+yolo detect train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=1 device=cpu project=outputs/eval/ablation name=A7_all3

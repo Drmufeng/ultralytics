@@ -1,0 +1,54 @@
+# command line: main.py recognition -c config/st_gcn/kinetics-skeleton/mytrain.yaml --device 0 --batch_size 4
+
+base_lr: 0.01
+batch_size: 4
+config: config/st_gcn/kinetics-skeleton/mytrain.yaml
+debug: false
+device:
+- 0
+eval_interval: 5
+feeder: feeder.feeder.Feeder
+ignore_weights: []
+log_interval: 100
+model: net.st_gcn.Model
+model_args:
+    edge_importance_weighting: true
+    graph_args:
+        layout: yolopose
+        strategy: spatial
+    in_channels: 3
+    num_class: 4
+nesterov: true
+num_epoch: 50
+num_worker: 4
+num_workers: 4
+optimizer: SGD
+pavi_log: false
+phase: train
+print_log: true
+save_interval: 10
+save_log: true
+save_result: false
+show_topk:
+- 1
+- 4
+start_epoch: 0
+step:
+- 20
+- 30
+- 40
+- 50
+test_batch_size: 256
+test_feeder_args:
+    data_path: ./runs/yoloJSON/valdata.npy
+    label_path: ./runs/yoloJSON/vallabel.pkl
+train_feeder_args:
+    data_path: ./runs/yoloJSON/traindata.npy
+    label_path: ./runs/yoloJSON/trainlabel.pkl
+    random_choose: true
+    random_move: true
+    window_size: 300
+use_gpu: true
+weight_decay: 0.0001
+weights: null
+work_dir: ./work_dir-gcn/recognition/kinetics_skeleton/ST_GCN

@@ -1,0 +1,55 @@
+# command line: B:\ultralytics\ProjectOptimization\src\ultralytics-main\main.py recognition -c B:\ultralytics\ProjectOptimization\logs\run_logs\_tmp_train_pretrain_1773718928.yaml --weights B:\ultralytics\ProjectOptimization\models\stgcn\out17\best.pt --log_interval 1
+
+base_lr: 0.01
+batch_size: 64
+config: B:\ultralytics\ProjectOptimization\logs\run_logs\_tmp_train_pretrain_1773718928.yaml
+debug: false
+device:
+- 0
+eval_interval: 5
+feeder: feeder.feeder.Feeder
+ignore_weights: []
+log_interval: 1
+model: net.st_gcn.Model
+model_args:
+    edge_importance_weighting: true
+    graph_args:
+        layout: yolopose
+        strategy: spatial
+    in_channels: 3
+    num_class: 10
+nesterov: true
+num_epoch: 50
+num_worker: 4
+num_workers: 4
+optimizer: SGD
+pavi_log: false
+phase: train
+print_log: true
+save_interval: 10
+save_log: true
+save_result: false
+show_topk:
+- 1
+- 4
+start_epoch: 0
+step:
+- 20
+- 30
+- 40
+- 50
+test_batch_size: 64
+test_feeder_args:
+    data_path: B:\ultralytics\ProjectOptimization\data\stgcn_dataset_out17\stgcn_dataset_out\val_data.npy
+    label_path: B:\ultralytics\ProjectOptimization\data\stgcn_dataset_out17\stgcn_dataset_out\val_label.pkl
+train_feeder_args:
+    data_path: B:\ultralytics\ProjectOptimization\data\stgcn_dataset_out17\stgcn_dataset_out\train_data.npy
+    debug: false
+    label_path: B:\ultralytics\ProjectOptimization\data\stgcn_dataset_out17\stgcn_dataset_out\train_label.pkl
+    random_choose: true
+    random_move: true
+    window_size: 300
+use_gpu: true
+weight_decay: 0.0001
+weights: B:\ultralytics\ProjectOptimization\models\stgcn\out17\best.pt
+work_dir: B:\ultralytics\ProjectOptimization\models\stgcn\out17

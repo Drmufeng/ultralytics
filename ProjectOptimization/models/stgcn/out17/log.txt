@@ -1,0 +1,709 @@
+[03.16.26|21:36:01] Parameters:
+{'work_dir': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\out17', 'config': 'B:\\ultralytics\\ProjectOptimization\\logs\\run_logs\\_tmp_train_pretrain_1773668158.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 50, 'use_gpu': True, 'device': [0], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'random_choose': True, 'random_move': True, 'window_size': 300, 'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 10, 'edge_importance_weighting': True, 'graph_args': {'layout': 'yolopose', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 4], 'base_lr': 0.01, 'step': [20, 30, 40, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001, 'num_workers': 4}
+
+[03.16.26|21:36:01] Training epoch: 0
+[03.16.26|21:36:19] 	Iter 0 Done. | loss: 2.3118 | lr: 0.010000
+[03.16.26|21:40:54] Parameters:
+{'work_dir': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\out17', 'config': 'B:\\ultralytics\\ProjectOptimization\\logs\\run_logs\\_tmp_train_pretrain_1773668452.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 50, 'use_gpu': True, 'device': [0], 'log_interval': 1, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'random_choose': True, 'random_move': True, 'window_size': 300, 'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 10, 'edge_importance_weighting': True, 'graph_args': {'layout': 'yolopose', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 4], 'base_lr': 0.01, 'step': [20, 30, 40, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001, 'num_workers': 4}
+
+[03.16.26|21:40:54] Training epoch: 0
+[03.16.26|21:41:12] 	Iter 0 Done. | loss: 2.3723 | lr: 0.010000
+[03.16.26|21:41:28] 	Iter 1 Done. | loss: 2.2390 | lr: 0.010000
+[03.16.26|21:41:43] 	Iter 2 Done. | loss: 2.2025 | lr: 0.010000
+[03.16.26|21:41:58] 	Iter 3 Done. | loss: 2.2201 | lr: 0.010000
+[03.16.26|21:42:14] 	Iter 4 Done. | loss: 2.1106 | lr: 0.010000
+[03.16.26|21:42:29] 	Iter 5 Done. | loss: 2.0620 | lr: 0.010000
+[03.16.26|21:42:45] 	Iter 6 Done. | loss: 2.1097 | lr: 0.010000
+[03.16.26|21:46:08] Parameters:
+{'work_dir': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\out17', 'config': 'B:\\ultralytics\\ProjectOptimization\\logs\\run_logs\\_tmp_train_pretrain_1773668766.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 50, 'use_gpu': True, 'device': [0], 'log_interval': 1, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'random_choose': True, 'random_move': True, 'window_size': 300, 'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 10, 'edge_importance_weighting': True, 'graph_args': {'layout': 'yolopose', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 4], 'base_lr': 0.01, 'step': [20, 30, 40, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001, 'num_workers': 4}
+
+[03.16.26|21:46:08] Training epoch: 0
+[03.16.26|21:46:27] 	Iter 0 Done. | loss: 2.3371 | lr: 0.010000
+[03.16.26|21:46:43] 	Iter 1 Done. | loss: 2.3312 | lr: 0.010000
+[03.16.26|21:46:58] 	Iter 2 Done. | loss: 2.2202 | lr: 0.010000
+[03.16.26|21:47:14] 	Iter 3 Done. | loss: 2.1229 | lr: 0.010000
+[03.16.26|21:47:31] 	Iter 4 Done. | loss: 2.1969 | lr: 0.010000
+[03.16.26|21:47:48] 	Iter 5 Done. | loss: 1.8560 | lr: 0.010000
+[03.16.26|21:48:04] 	Iter 6 Done. | loss: 2.4780 | lr: 0.010000
+[03.16.26|21:48:11] Load weights from B:\ultralytics\ProjectOptimization\models\stgcn\legacy\epoch50_model.pt.
+[03.16.26|21:48:11] Filter [fcn] remove weights [fcn.weight].
+[03.16.26|21:48:11] Filter [fcn] remove weights [fcn.bias].
+[03.16.26|21:48:11] Load weights [A].
+[03.16.26|21:48:11] Load weights [data_bn.weight].
+[03.16.26|21:48:11] Load weights [data_bn.bias].
+[03.16.26|21:48:11] Load weights [data_bn.running_mean].
+[03.16.26|21:48:11] Load weights [data_bn.running_var].
+[03.16.26|21:48:11] Load weights [data_bn.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.0.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.1.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.2.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.3.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.1.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.1.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.1.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.1.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.4.residual.1.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.5.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.6.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.1.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.1.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.1.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.1.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.7.residual.1.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.8.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.gcn.conv.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.gcn.conv.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.0.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.0.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.0.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.0.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.0.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.2.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.2.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.3.weight].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.3.bias].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.3.running_mean].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.3.running_var].
+[03.16.26|21:48:11] Load weights [st_gcn_networks.9.tcn.3.num_batches_tracked].
+[03.16.26|21:48:11] Load weights [edge_importance.0].
+[03.16.26|21:48:11] Load weights [edge_importance.1].
+[03.16.26|21:48:11] Load weights [edge_importance.2].
+[03.16.26|21:48:11] Load weights [edge_importance.3].
+[03.16.26|21:48:11] Load weights [edge_importance.4].
+[03.16.26|21:48:11] Load weights [edge_importance.5].
+[03.16.26|21:48:11] Load weights [edge_importance.6].
+[03.16.26|21:48:11] Load weights [edge_importance.7].
+[03.16.26|21:48:11] Load weights [edge_importance.8].
+[03.16.26|21:48:11] Load weights [edge_importance.9].
+[03.16.26|21:48:11] Can not find weights [fcn.bias].
+[03.16.26|21:48:11] Can not find weights [fcn.weight].
+[03.16.26|21:48:11] Parameters:
+{'work_dir': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\out17', 'config': 'B:\\ultralytics\\ProjectOptimization\\logs\\run_logs\\_tmp_train_pretrain_1773668889.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 50, 'use_gpu': True, 'device': [0], 'log_interval': 1, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'random_choose': True, 'random_move': True, 'window_size': 300, 'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 10, 'edge_importance_weighting': True, 'graph_args': {'layout': 'yolopose', 'strategy': 'spatial'}}, 'weights': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\legacy\\epoch50_model.pt', 'ignore_weights': ['fcn'], 'show_topk': [1, 4], 'base_lr': 0.01, 'step': [20, 30, 40, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001, 'num_workers': 4}
+
+[03.16.26|21:48:11] Training epoch: 0
+[03.16.26|21:48:31] 	Iter 7 Done. | loss: 1.9698 | lr: 0.010000
+[03.16.26|21:48:47] 	Iter 8 Done. | loss: 1.9949 | lr: 0.010000
+[03.16.26|21:49:03] 	Iter 9 Done. | loss: 1.9467 | lr: 0.010000
+[03.16.26|21:49:03] 	mean_loss: 2.14537171125412
+[03.16.26|21:49:03] Time consumption:
+[03.16.26|21:49:03] Done.
+[03.16.26|21:49:03] Training epoch: 1
+[03.16.26|21:49:19] 	Iter 10 Done. | loss: 1.6960 | lr: 0.010000
+[03.16.26|21:49:36] 	Iter 11 Done. | loss: 1.7497 | lr: 0.010000
+[03.16.26|21:49:52] 	Iter 12 Done. | loss: 1.7077 | lr: 0.010000
+[03.16.26|21:50:09] 	Iter 13 Done. | loss: 1.7462 | lr: 0.010000
+[03.16.26|21:50:26] 	Iter 14 Done. | loss: 1.6803 | lr: 0.010000
+[03.16.26|21:50:43] 	Iter 15 Done. | loss: 1.6036 | lr: 0.010000
+[03.16.26|21:51:01] 	Iter 16 Done. | loss: 1.6897 | lr: 0.010000
+[03.16.26|21:51:18] 	Iter 17 Done. | loss: 1.6358 | lr: 0.010000
+[03.16.26|21:51:34] 	Iter 18 Done. | loss: 1.6830 | lr: 0.010000
+[03.16.26|21:51:50] 	Iter 19 Done. | loss: 1.4318 | lr: 0.010000
+[03.16.26|21:51:50] 	mean_loss: 1.6623733520507813
+[03.16.26|21:51:50] Time consumption:
+[03.16.26|21:51:50] Done.
+[03.16.26|21:51:50] Training epoch: 2
+[03.16.26|21:52:06] 	Iter 20 Done. | loss: 1.5722 | lr: 0.010000
+[03.16.26|21:52:23] 	Iter 21 Done. | loss: 1.5645 | lr: 0.010000
+[03.16.26|21:52:39] 	Iter 22 Done. | loss: 1.5471 | lr: 0.010000
+[03.16.26|21:52:55] 	Iter 23 Done. | loss: 1.5168 | lr: 0.010000
+[03.16.26|21:53:11] 	Iter 24 Done. | loss: 1.4775 | lr: 0.010000
+[03.16.26|21:53:28] 	Iter 25 Done. | loss: 1.3524 | lr: 0.010000
+[03.16.26|21:53:46] 	Iter 26 Done. | loss: 1.4512 | lr: 0.010000
+[03.16.26|21:54:03] 	Iter 27 Done. | loss: 1.4579 | lr: 0.010000
+[03.16.26|21:54:21] 	Iter 28 Done. | loss: 1.3758 | lr: 0.010000
+[03.16.26|21:54:38] 	Iter 29 Done. | loss: 1.5733 | lr: 0.010000
+[03.16.26|21:54:38] 	mean_loss: 1.4888604283332825
+[03.16.26|21:54:38] Time consumption:
+[03.16.26|21:54:38] Done.
+[03.16.26|21:54:38] Training epoch: 3
+[03.16.26|21:54:55] 	Iter 30 Done. | loss: 1.1476 | lr: 0.010000
+[03.16.26|21:55:12] 	Iter 31 Done. | loss: 1.3694 | lr: 0.010000
+[03.16.26|21:55:29] 	Iter 32 Done. | loss: 1.3252 | lr: 0.010000
+[03.16.26|21:55:46] 	Iter 33 Done. | loss: 1.1922 | lr: 0.010000
+[03.16.26|21:56:03] 	Iter 34 Done. | loss: 1.0999 | lr: 0.010000
+[03.16.26|21:56:20] 	Iter 35 Done. | loss: 1.0621 | lr: 0.010000
+[03.16.26|21:56:36] 	Iter 36 Done. | loss: 1.2378 | lr: 0.010000
+[03.16.26|21:56:52] 	Iter 37 Done. | loss: 1.3783 | lr: 0.010000
+[03.16.26|21:57:08] 	Iter 38 Done. | loss: 1.2400 | lr: 0.010000
+[03.16.26|21:57:25] 	Iter 39 Done. | loss: 1.1090 | lr: 0.010000
+[03.16.26|21:57:25] 	mean_loss: 1.216143250465393
+[03.16.26|21:57:25] Time consumption:
+[03.16.26|21:57:25] Done.
+[03.16.26|21:57:25] Training epoch: 4
+[03.16.26|21:57:41] 	Iter 40 Done. | loss: 1.1344 | lr: 0.010000
+[03.16.26|21:57:57] 	Iter 41 Done. | loss: 0.9705 | lr: 0.010000
+[03.16.26|21:58:13] 	Iter 42 Done. | loss: 1.1052 | lr: 0.010000
+[03.16.26|21:58:29] 	Iter 43 Done. | loss: 1.2281 | lr: 0.010000
+[03.16.26|21:58:46] 	Iter 44 Done. | loss: 1.2536 | lr: 0.010000
+[03.16.26|21:59:02] 	Iter 45 Done. | loss: 1.3243 | lr: 0.010000
+[03.16.26|21:59:18] 	Iter 46 Done. | loss: 0.8961 | lr: 0.010000
+[03.16.26|21:59:34] 	Iter 47 Done. | loss: 1.3675 | lr: 0.010000
+[03.16.26|21:59:51] 	Iter 48 Done. | loss: 1.1688 | lr: 0.010000
+[03.16.26|22:00:07] 	Iter 49 Done. | loss: 1.0817 | lr: 0.010000
+[03.16.26|22:00:07] 	mean_loss: 1.1530256688594818
+[03.16.26|22:00:07] Time consumption:
+[03.16.26|22:00:07] Done.
+[03.16.26|22:00:07] Eval epoch: 4
+[03.16.26|22:00:28] 	mean_loss: 1.3550729354222615
+[03.16.26|22:00:28] 	Top1: 52.15%
+[03.16.26|22:00:28] 	Top4: 93.01%
+[03.16.26|22:00:28] The model has been saved as B:\ultralytics\ProjectOptimization\models\stgcn\out17/best.pt.
+[03.16.26|22:00:28] New best Top1: 52.15% at epoch 5.
+[03.16.26|22:00:28] Done.
+[03.16.26|22:00:28] Training epoch: 5
+[03.16.26|22:00:44] 	Iter 50 Done. | loss: 1.0749 | lr: 0.010000
+[03.16.26|22:01:01] 	Iter 51 Done. | loss: 0.9694 | lr: 0.010000
+[03.16.26|22:01:17] 	Iter 52 Done. | loss: 0.9080 | lr: 0.010000
+[03.16.26|22:01:33] 	Iter 53 Done. | loss: 1.2476 | lr: 0.010000
+[03.16.26|22:01:49] 	Iter 54 Done. | loss: 1.0724 | lr: 0.010000
+[03.16.26|22:02:05] 	Iter 55 Done. | loss: 0.9331 | lr: 0.010000
+[03.16.26|22:02:22] 	Iter 56 Done. | loss: 0.9948 | lr: 0.010000
+[03.16.26|22:02:38] 	Iter 57 Done. | loss: 0.9991 | lr: 0.010000
+[03.16.26|22:02:54] 	Iter 58 Done. | loss: 0.9769 | lr: 0.010000
+[03.16.26|22:03:10] 	Iter 59 Done. | loss: 1.0090 | lr: 0.010000
+[03.16.26|22:03:10] 	mean_loss: 1.0185179531574249
+[03.16.26|22:03:10] Time consumption:
+[03.16.26|22:03:10] Done.
+[03.16.26|22:03:10] Training epoch: 6
+[03.16.26|22:03:27] 	Iter 60 Done. | loss: 0.9866 | lr: 0.010000
+[03.16.26|22:03:43] 	Iter 61 Done. | loss: 0.7614 | lr: 0.010000
+[03.16.26|22:03:59] 	Iter 62 Done. | loss: 0.8981 | lr: 0.010000
+[03.16.26|22:04:15] 	Iter 63 Done. | loss: 0.8970 | lr: 0.010000
+[03.16.26|22:04:32] 	Iter 64 Done. | loss: 0.8189 | lr: 0.010000
+[03.16.26|22:04:48] 	Iter 65 Done. | loss: 0.8954 | lr: 0.010000
+[03.16.26|22:05:04] 	Iter 66 Done. | loss: 0.7145 | lr: 0.010000
+[03.16.26|22:05:20] 	Iter 67 Done. | loss: 0.7850 | lr: 0.010000
+[03.16.26|22:05:37] 	Iter 68 Done. | loss: 1.0599 | lr: 0.010000
+[03.16.26|22:05:53] 	Iter 69 Done. | loss: 0.8746 | lr: 0.010000
+[03.16.26|22:05:53] 	mean_loss: 0.8691375315189361
+[03.16.26|22:05:53] Time consumption:
+[03.16.26|22:05:53] Done.
+[03.16.26|22:05:53] Training epoch: 7
+[03.16.26|22:06:09] 	Iter 70 Done. | loss: 0.6803 | lr: 0.010000
+[03.16.26|22:06:25] 	Iter 71 Done. | loss: 0.6632 | lr: 0.010000
+[03.16.26|22:06:42] 	Iter 72 Done. | loss: 0.7456 | lr: 0.010000
+[03.16.26|22:06:58] 	Iter 73 Done. | loss: 0.6920 | lr: 0.010000
+[03.16.26|22:07:14] 	Iter 74 Done. | loss: 0.9145 | lr: 0.010000
+[03.16.26|22:07:30] 	Iter 75 Done. | loss: 0.7552 | lr: 0.010000
+[03.16.26|22:07:46] 	Iter 76 Done. | loss: 0.7455 | lr: 0.010000
+[03.16.26|22:08:03] 	Iter 77 Done. | loss: 0.8035 | lr: 0.010000
+[03.16.26|22:08:19] 	Iter 78 Done. | loss: 0.7245 | lr: 0.010000
+[03.16.26|22:08:35] 	Iter 79 Done. | loss: 0.6545 | lr: 0.010000
+[03.16.26|22:08:35] 	mean_loss: 0.7378810942173004
+[03.16.26|22:08:35] Time consumption:
+[03.16.26|22:08:35] Done.
+[03.16.26|22:08:35] Training epoch: 8
+[03.16.26|22:08:51] 	Iter 80 Done. | loss: 0.6097 | lr: 0.010000
+[03.16.26|22:09:08] 	Iter 81 Done. | loss: 0.7594 | lr: 0.010000
+[03.16.26|22:09:24] 	Iter 82 Done. | loss: 0.9418 | lr: 0.010000
+[03.16.26|22:09:40] 	Iter 83 Done. | loss: 0.8211 | lr: 0.010000
+[03.16.26|22:09:56] 	Iter 84 Done. | loss: 0.8301 | lr: 0.010000
+[03.16.26|22:10:13] 	Iter 85 Done. | loss: 0.6761 | lr: 0.010000
+[03.16.26|22:10:29] 	Iter 86 Done. | loss: 0.9598 | lr: 0.010000
+[03.16.26|22:10:45] 	Iter 87 Done. | loss: 0.6467 | lr: 0.010000
+[03.16.26|22:11:01] 	Iter 88 Done. | loss: 0.8622 | lr: 0.010000
+[03.16.26|22:11:17] 	Iter 89 Done. | loss: 0.7859 | lr: 0.010000
+[03.16.26|22:11:17] 	mean_loss: 0.7892704486846924
+[03.16.26|22:11:17] Time consumption:
+[03.16.26|22:11:17] Done.
+[03.16.26|22:11:17] Training epoch: 9
+[03.16.26|22:11:34] 	Iter 90 Done. | loss: 0.7847 | lr: 0.010000
+[03.16.26|22:11:50] 	Iter 91 Done. | loss: 0.5653 | lr: 0.010000
+[03.16.26|22:12:06] 	Iter 92 Done. | loss: 0.8862 | lr: 0.010000
+[03.16.26|22:12:22] 	Iter 93 Done. | loss: 0.9515 | lr: 0.010000
+[03.16.26|22:12:39] 	Iter 94 Done. | loss: 0.7057 | lr: 0.010000
+[03.16.26|22:12:55] 	Iter 95 Done. | loss: 0.7243 | lr: 0.010000
+[03.16.26|22:13:11] 	Iter 96 Done. | loss: 0.5778 | lr: 0.010000
+[03.16.26|22:13:27] 	Iter 97 Done. | loss: 0.8047 | lr: 0.010000
+[03.16.26|22:13:44] 	Iter 98 Done. | loss: 0.5827 | lr: 0.010000
+[03.16.26|22:14:00] 	Iter 99 Done. | loss: 0.7454 | lr: 0.010000
+[03.16.26|22:14:00] 	mean_loss: 0.7328159213066101
+[03.16.26|22:14:00] Time consumption:
+[03.16.26|22:14:00] Done.
+[03.16.26|22:14:00] The model has been saved as B:\ultralytics\ProjectOptimization\models\stgcn\out17/epoch10_model.pt.
+[03.16.26|22:14:00] Eval epoch: 9
+[03.16.26|22:14:20] 	mean_loss: 1.3957510789235432
+[03.16.26|22:14:20] 	Top1: 56.99%
+[03.16.26|22:14:20] 	Top4: 89.25%
+[03.16.26|22:14:20] The model has been saved as B:\ultralytics\ProjectOptimization\models\stgcn\out17/best.pt.
+[03.16.26|22:14:20] New best Top1: 56.99% at epoch 10.
+[03.16.26|22:14:20] Done.
+[03.16.26|22:14:20] Training epoch: 10
+[03.16.26|22:14:36] 	Iter 100 Done. | loss: 0.5055 | lr: 0.010000
+[03.16.26|22:14:52] 	Iter 101 Done. | loss: 0.7576 | lr: 0.010000
+[03.16.26|22:15:08] 	Iter 102 Done. | loss: 0.4556 | lr: 0.010000
+[03.16.26|22:15:24] 	Iter 103 Done. | loss: 0.8246 | lr: 0.010000
+[03.16.26|22:15:41] 	Iter 104 Done. | loss: 0.6624 | lr: 0.010000
+[03.16.26|22:15:57] 	Iter 105 Done. | loss: 0.6360 | lr: 0.010000
+[03.16.26|22:16:13] 	Iter 106 Done. | loss: 0.8365 | lr: 0.010000
+[03.16.26|22:16:29] 	Iter 107 Done. | loss: 0.6211 | lr: 0.010000
+[03.16.26|22:16:46] 	Iter 108 Done. | loss: 0.6327 | lr: 0.010000
+[03.16.26|22:17:02] 	Iter 109 Done. | loss: 0.6744 | lr: 0.010000
+[03.16.26|22:17:02] 	mean_loss: 0.6606464505195617
+[03.16.26|22:17:02] Time consumption:
+[03.16.26|22:17:02] Done.
+[03.16.26|22:17:02] Training epoch: 11
+[03.16.26|22:17:18] 	Iter 110 Done. | loss: 0.5862 | lr: 0.010000
+[03.16.26|22:17:34] 	Iter 111 Done. | loss: 0.7193 | lr: 0.010000
+[03.16.26|22:17:50] 	Iter 112 Done. | loss: 0.7587 | lr: 0.010000
+[03.16.26|22:18:06] 	Iter 113 Done. | loss: 0.6697 | lr: 0.010000
+[03.16.26|22:18:23] 	Iter 114 Done. | loss: 0.6881 | lr: 0.010000
+[03.16.26|22:18:39] 	Iter 115 Done. | loss: 0.6399 | lr: 0.010000
+[03.16.26|22:18:55] 	Iter 116 Done. | loss: 1.1769 | lr: 0.010000
+[03.16.26|22:19:11] 	Iter 117 Done. | loss: 0.7062 | lr: 0.010000
+[03.16.26|22:19:27] 	Iter 118 Done. | loss: 0.7421 | lr: 0.010000
+[03.16.26|22:19:44] 	Iter 119 Done. | loss: 0.4675 | lr: 0.010000
+[03.16.26|22:19:44] 	mean_loss: 0.715445128083229
+[03.16.26|22:19:44] Time consumption:
+[03.16.26|22:19:44] Done.
+[03.16.26|22:19:44] Training epoch: 12
+[03.16.26|22:20:00] 	Iter 120 Done. | loss: 0.6678 | lr: 0.010000
+[03.16.26|22:20:16] 	Iter 121 Done. | loss: 0.9142 | lr: 0.010000
+[03.16.26|22:20:32] 	Iter 122 Done. | loss: 0.5132 | lr: 0.010000
+[03.16.26|22:20:49] 	Iter 123 Done. | loss: 0.6673 | lr: 0.010000
+[03.16.26|22:21:05] 	Iter 124 Done. | loss: 0.6418 | lr: 0.010000
+[03.16.26|22:21:21] 	Iter 125 Done. | loss: 0.5928 | lr: 0.010000
+[03.16.26|22:21:37] 	Iter 126 Done. | loss: 0.6822 | lr: 0.010000
+[03.16.26|22:21:53] 	Iter 127 Done. | loss: 0.5259 | lr: 0.010000
+[03.16.26|22:22:10] 	Iter 128 Done. | loss: 0.6754 | lr: 0.010000
+[03.16.26|22:22:26] 	Iter 129 Done. | loss: 0.7079 | lr: 0.010000
+[03.16.26|22:22:26] 	mean_loss: 0.65885688662529
+[03.16.26|22:22:26] Time consumption:
+[03.16.26|22:22:26] Done.
+[03.16.26|22:22:26] Training epoch: 13
+[03.16.26|22:22:42] 	Iter 130 Done. | loss: 0.5786 | lr: 0.010000
+[03.16.26|22:22:58] 	Iter 131 Done. | loss: 0.4125 | lr: 0.010000
+[03.16.26|22:23:14] 	Iter 132 Done. | loss: 0.6491 | lr: 0.010000
+[03.16.26|22:23:31] 	Iter 133 Done. | loss: 0.6475 | lr: 0.010000
+[03.16.26|22:23:47] 	Iter 134 Done. | loss: 0.4938 | lr: 0.010000
+[03.16.26|22:24:03] 	Iter 135 Done. | loss: 0.6938 | lr: 0.010000
+[03.16.26|22:24:19] 	Iter 136 Done. | loss: 0.5920 | lr: 0.010000
+[03.16.26|22:24:35] 	Iter 137 Done. | loss: 0.4896 | lr: 0.010000
+[03.16.26|22:24:52] 	Iter 138 Done. | loss: 0.5183 | lr: 0.010000
+[03.16.26|22:25:08] 	Iter 139 Done. | loss: 0.5030 | lr: 0.010000
+[03.16.26|22:25:08] 	mean_loss: 0.5578143358230591
+[03.16.26|22:25:08] Time consumption:
+[03.16.26|22:25:08] Done.
+[03.16.26|22:25:08] Training epoch: 14
+[03.16.26|22:25:24] 	Iter 140 Done. | loss: 0.5206 | lr: 0.010000
+[03.16.26|22:25:40] 	Iter 141 Done. | loss: 0.4752 | lr: 0.010000
+[03.16.26|22:25:56] 	Iter 142 Done. | loss: 0.6797 | lr: 0.010000
+[03.16.26|22:26:13] 	Iter 143 Done. | loss: 0.5308 | lr: 0.010000
+[03.16.26|22:26:29] 	Iter 144 Done. | loss: 0.6422 | lr: 0.010000
+[03.16.26|22:26:45] 	Iter 145 Done. | loss: 0.5940 | lr: 0.010000
+[03.16.26|22:27:01] 	Iter 146 Done. | loss: 0.4468 | lr: 0.010000
+[03.16.26|22:27:17] 	Iter 147 Done. | loss: 0.6939 | lr: 0.010000
+[03.16.26|22:27:34] 	Iter 148 Done. | loss: 0.8032 | lr: 0.010000
+[03.16.26|22:27:50] 	Iter 149 Done. | loss: 0.3656 | lr: 0.010000
+[03.16.26|22:27:50] 	mean_loss: 0.5751943290233612
+[03.16.26|22:27:50] Time consumption:
+[03.16.26|22:27:50] Done.
+[03.16.26|22:27:50] Eval epoch: 14
+[03.16.26|22:28:11] 	mean_loss: 0.9381223122278849
+[03.16.26|22:28:11] 	Top1: 68.28%
+[03.16.26|22:28:11] 	Top4: 96.24%
+[03.16.26|22:28:11] The model has been saved as B:\ultralytics\ProjectOptimization\models\stgcn\out17/best.pt.
+[03.16.26|22:28:11] New best Top1: 68.28% at epoch 15.
+[03.16.26|22:28:11] Done.
+[03.16.26|22:28:11] Training epoch: 15
+[03.16.26|22:28:27] 	Iter 150 Done. | loss: 0.4701 | lr: 0.010000
+[03.16.26|22:28:44] 	Iter 151 Done. | loss: 0.3971 | lr: 0.010000
+[03.16.26|22:29:00] 	Iter 152 Done. | loss: 0.4867 | lr: 0.010000
+[03.16.26|22:29:16] 	Iter 153 Done. | loss: 0.6501 | lr: 0.010000
+[03.16.26|22:29:32] 	Iter 154 Done. | loss: 0.7335 | lr: 0.010000
+[03.16.26|22:29:49] 	Iter 155 Done. | loss: 0.7806 | lr: 0.010000
+[03.16.26|22:30:05] 	Iter 156 Done. | loss: 0.3983 | lr: 0.010000
+[03.16.26|22:30:21] 	Iter 157 Done. | loss: 0.7147 | lr: 0.010000
+[03.16.26|22:30:37] 	Iter 158 Done. | loss: 0.7762 | lr: 0.010000
+[03.16.26|22:30:54] 	Iter 159 Done. | loss: 0.4426 | lr: 0.010000
+[03.16.26|22:30:54] 	mean_loss: 0.5849813908338547
+[03.16.26|22:30:54] Time consumption:
+[03.16.26|22:30:54] Done.
+[03.16.26|22:30:54] Training epoch: 16
+[03.16.26|22:31:10] 	Iter 160 Done. | loss: 0.5514 | lr: 0.010000
+[03.16.26|22:31:26] 	Iter 161 Done. | loss: 0.4804 | lr: 0.010000
+[03.16.26|22:31:43] 	Iter 162 Done. | loss: 0.6687 | lr: 0.010000
+[03.16.26|22:31:59] 	Iter 163 Done. | loss: 0.3152 | lr: 0.010000
+[03.16.26|22:32:15] 	Iter 164 Done. | loss: 0.4733 | lr: 0.010000
+[03.16.26|22:32:31] 	Iter 165 Done. | loss: 0.5865 | lr: 0.010000
+[03.16.26|22:32:48] 	Iter 166 Done. | loss: 0.5682 | lr: 0.010000
+[03.16.26|22:33:04] 	Iter 167 Done. | loss: 0.4946 | lr: 0.010000
+[03.16.26|22:33:20] 	Iter 168 Done. | loss: 0.5814 | lr: 0.010000
+[03.16.26|22:33:36] 	Iter 169 Done. | loss: 0.5621 | lr: 0.010000
+[03.16.26|22:33:36] 	mean_loss: 0.5281717926263809
+[03.16.26|22:33:36] Time consumption:
+[03.16.26|22:33:36] Done.
+[03.16.26|22:33:36] Training epoch: 17
+[03.16.26|22:33:52] 	Iter 170 Done. | loss: 0.4259 | lr: 0.010000
+[03.16.26|22:34:08] 	Iter 171 Done. | loss: 0.5023 | lr: 0.010000
+[03.16.26|22:34:25] 	Iter 172 Done. | loss: 0.4541 | lr: 0.010000
+[03.16.26|22:34:41] 	Iter 173 Done. | loss: 0.6105 | lr: 0.010000
+[03.16.26|22:34:57] 	Iter 174 Done. | loss: 0.3769 | lr: 0.010000
+[03.16.26|22:35:13] 	Iter 175 Done. | loss: 0.4582 | lr: 0.010000
+[03.16.26|22:35:29] 	Iter 176 Done. | loss: 0.5422 | lr: 0.010000
+[03.16.26|22:35:45] 	Iter 177 Done. | loss: 0.7282 | lr: 0.010000
+[03.16.26|22:36:02] 	Iter 178 Done. | loss: 0.6422 | lr: 0.010000
+[03.16.26|22:36:18] 	Iter 179 Done. | loss: 0.6924 | lr: 0.010000
+[03.16.26|22:36:18] 	mean_loss: 0.5432949870824814
+[03.16.26|22:36:18] Time consumption:
+[03.16.26|22:36:18] Done.
+[03.16.26|22:36:18] Training epoch: 18
+[03.16.26|22:36:34] 	Iter 180 Done. | loss: 0.6418 | lr: 0.010000
+[03.16.26|22:36:50] 	Iter 181 Done. | loss: 0.4990 | lr: 0.010000
+[03.16.26|22:37:06] 	Iter 182 Done. | loss: 0.5881 | lr: 0.010000
+[03.16.26|22:37:22] 	Iter 183 Done. | loss: 0.5584 | lr: 0.010000
+[03.16.26|22:37:38] 	Iter 184 Done. | loss: 0.6749 | lr: 0.010000
+[03.16.26|22:37:55] 	Iter 185 Done. | loss: 0.3700 | lr: 0.010000
+[03.16.26|22:38:11] 	Iter 186 Done. | loss: 0.5712 | lr: 0.010000
+[03.16.26|22:38:27] 	Iter 187 Done. | loss: 0.4649 | lr: 0.010000
+[03.16.26|22:38:43] 	Iter 188 Done. | loss: 0.5055 | lr: 0.010000
+[03.16.26|22:39:00] 	Iter 189 Done. | loss: 0.4134 | lr: 0.010000
+[03.16.26|22:39:00] 	mean_loss: 0.5287129431962967
+[03.16.26|22:39:00] Time consumption:
+[03.16.26|22:39:00] Done.
+[03.16.26|22:39:00] Training epoch: 19
+[03.16.26|22:39:16] 	Iter 190 Done. | loss: 0.6435 | lr: 0.010000
+[03.16.26|22:39:32] 	Iter 191 Done. | loss: 0.4748 | lr: 0.010000
+[03.16.26|22:39:48] 	Iter 192 Done. | loss: 0.3773 | lr: 0.010000
+[03.16.26|22:40:04] 	Iter 193 Done. | loss: 0.5744 | lr: 0.010000
+[03.16.26|22:40:21] 	Iter 194 Done. | loss: 0.5508 | lr: 0.010000
+[03.16.26|22:40:37] 	Iter 195 Done. | loss: 0.6146 | lr: 0.010000
+[03.16.26|22:40:53] 	Iter 196 Done. | loss: 0.5179 | lr: 0.010000
+[03.16.26|22:41:09] 	Iter 197 Done. | loss: 0.5147 | lr: 0.010000
+[03.16.26|22:41:25] 	Iter 198 Done. | loss: 0.5278 | lr: 0.010000
+[03.16.26|22:41:42] 	Iter 199 Done. | loss: 0.3140 | lr: 0.010000
+[03.16.26|22:41:42] 	mean_loss: 0.5109701156616211
+[03.16.26|22:41:42] Time consumption:
+[03.16.26|22:41:42] Done.
+[03.16.26|22:41:42] The model has been saved as B:\ultralytics\ProjectOptimization\models\stgcn\out17/epoch20_model.pt.
+[03.16.26|22:41:42] Eval epoch: 19
+[03.16.26|22:42:01] 	mean_loss: 0.7791419525941213
+[03.16.26|22:42:01] 	Top1: 73.12%
+[03.16.26|22:42:01] 	Top4: 97.85%
+[03.16.26|22:42:01] The model has been saved as B:\ultralytics\ProjectOptimization\models\stgcn\out17/best.pt.
+[03.16.26|22:42:01] New best Top1: 73.12% at epoch 20.
+[03.16.26|22:42:01] Done.
+[03.16.26|22:42:01] Training epoch: 20
+[03.16.26|22:42:17] 	Iter 200 Done. | loss: 0.4187 | lr: 0.001000
+[03.16.26|22:42:33] 	Iter 201 Done. | loss: 0.5505 | lr: 0.001000
+[03.16.26|22:42:50] 	Iter 202 Done. | loss: 0.3348 | lr: 0.001000
+[03.16.26|22:43:06] 	Iter 203 Done. | loss: 0.5627 | lr: 0.001000
+[03.16.26|22:43:22] 	Iter 204 Done. | loss: 0.4943 | lr: 0.001000
+[03.16.26|22:43:38] 	Iter 205 Done. | loss: 0.4522 | lr: 0.001000
+[03.16.26|22:43:54] 	Iter 206 Done. | loss: 0.2838 | lr: 0.001000
+[03.16.26|22:44:11] 	Iter 207 Done. | loss: 0.4343 | lr: 0.001000
+[03.16.26|22:44:27] 	Iter 208 Done. | loss: 0.4254 | lr: 0.001000
+[03.16.26|22:44:43] 	Iter 209 Done. | loss: 0.2804 | lr: 0.001000
+[03.16.26|22:44:43] 	mean_loss: 0.4236956357955933
+[03.16.26|22:44:43] Time consumption:
+[03.16.26|22:44:43] Done.
+[03.16.26|22:44:43] Training epoch: 21
+[03.16.26|22:44:59] 	Iter 210 Done. | loss: 0.5741 | lr: 0.001000
+[03.16.26|22:45:16] 	Iter 211 Done. | loss: 0.3163 | lr: 0.001000
+[03.16.26|22:45:32] 	Iter 212 Done. | loss: 0.4096 | lr: 0.001000
+[03.16.26|22:45:48] 	Iter 213 Done. | loss: 0.3063 | lr: 0.001000
+[03.16.26|22:46:04] 	Iter 214 Done. | loss: 0.2620 | lr: 0.001000
+[03.16.26|22:46:20] 	Iter 215 Done. | loss: 0.2998 | lr: 0.001000
+[03.16.26|22:46:37] 	Iter 216 Done. | loss: 0.3729 | lr: 0.001000
+[03.16.26|22:46:53] 	Iter 217 Done. | loss: 0.4730 | lr: 0.001000
+[03.16.26|22:47:09] 	Iter 218 Done. | loss: 0.4606 | lr: 0.001000
+[03.17.26|11:42:10] Load weights from B:\ultralytics\ProjectOptimization\models\stgcn\out17\best.pt.
+[03.17.26|11:42:10] Load weights [A].
+[03.17.26|11:42:10] Load weights [data_bn.weight].
+[03.17.26|11:42:10] Load weights [data_bn.bias].
+[03.17.26|11:42:10] Load weights [data_bn.running_mean].
+[03.17.26|11:42:10] Load weights [data_bn.running_var].
+[03.17.26|11:42:10] Load weights [data_bn.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.0.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.1.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.2.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.3.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.1.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.1.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.1.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.1.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.4.residual.1.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.5.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.6.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.1.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.1.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.1.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.1.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.7.residual.1.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.8.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.gcn.conv.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.gcn.conv.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.0.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.0.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.0.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.0.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.0.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.2.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.2.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.3.weight].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.3.bias].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.3.running_mean].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.3.running_var].
+[03.17.26|11:42:10] Load weights [st_gcn_networks.9.tcn.3.num_batches_tracked].
+[03.17.26|11:42:10] Load weights [edge_importance.0].
+[03.17.26|11:42:10] Load weights [edge_importance.1].
+[03.17.26|11:42:10] Load weights [edge_importance.2].
+[03.17.26|11:42:10] Load weights [edge_importance.3].
+[03.17.26|11:42:10] Load weights [edge_importance.4].
+[03.17.26|11:42:10] Load weights [edge_importance.5].
+[03.17.26|11:42:10] Load weights [edge_importance.6].
+[03.17.26|11:42:10] Load weights [edge_importance.7].
+[03.17.26|11:42:10] Load weights [edge_importance.8].
+[03.17.26|11:42:10] Load weights [edge_importance.9].
+[03.17.26|11:42:10] Load weights [fcn.weight].
+[03.17.26|11:42:10] Load weights [fcn.bias].
+[03.17.26|11:42:11] Parameters:
+{'work_dir': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\out17', 'config': 'B:\\ultralytics\\ProjectOptimization\\logs\\run_logs\\_tmp_train_pretrain_1773718928.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 50, 'use_gpu': True, 'device': [0], 'log_interval': 1, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'random_choose': True, 'random_move': True, 'window_size': 300, 'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_data.npy', 'label_path': 'B:\\ultralytics\\ProjectOptimization\\data\\stgcn_dataset_out17\\stgcn_dataset_out\\val_label.pkl'}, 'batch_size': 64, 'test_batch_size': 64, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 10, 'edge_importance_weighting': True, 'graph_args': {'layout': 'yolopose', 'strategy': 'spatial'}}, 'weights': 'B:\\ultralytics\\ProjectOptimization\\models\\stgcn\\out17\\best.pt', 'ignore_weights': [], 'show_topk': [1, 4], 'base_lr': 0.01, 'step': [20, 30, 40, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001, 'num_workers': 4}
+
+[03.17.26|11:42:11] Training epoch: 0

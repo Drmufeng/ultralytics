@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-17 11:54:34",
+  "theme": "yolo_modules",
+  "data_profile": "v17",
+  "layout": "yolopose",
+  "train_config": "configs/train/train_stgcn_out17.yaml",
+  "model_mode": "placeholder",
+  "model_category": "UNKNOWN",
+  "data_category": "UNKNOWN",
+  "task_name": "detect",
+  "model_yaml_input": "",
+  "data_yaml_input": "<YOUR_DATA_YAML>",
+  "files": [
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\smoke_device\\ablation_plan.csv",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\smoke_device\\ablation_plan.md",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\smoke_device\\run_commands.txt"
+  ]
+}

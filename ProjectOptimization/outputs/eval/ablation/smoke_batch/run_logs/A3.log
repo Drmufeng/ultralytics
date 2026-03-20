@@ -1,0 +1,1 @@
+[DRY_RUN] yolo pose train model=<YOUR_MODEL_YAML> data=<YOUR_DATA_YAML> epochs=<EPOCHS> project=outputs/eval/ablation name=A3_scsa

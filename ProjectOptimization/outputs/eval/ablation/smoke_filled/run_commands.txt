@@ -1,0 +1,27 @@
+# 命令模板（按实验ID替换你的模型YAML或运行入口）
+
+# 说明：若你在UI中已填写模型YAML/数据YAML/epochs，则本文件已可直接执行。
+
+# A0 baseline modules=-
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A0_baseline
+
+# A1 adown modules=ADown
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A1_adown
+
+# A2 dyrfaup modules=DyRFAUp
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A2_dyrfaup
+
+# A3 scsa modules=SCSA
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A3_scsa
+
+# A4 adown+dyrfaup modules=ADown,DyRFAUp
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A4_adown+dyrfaup
+
+# A5 adown+scsa modules=ADown,SCSA
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A5_adown+scsa
+
+# A6 dyrfaup+scsa modules=DyRFAUp,SCSA
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A6_dyrfaup+scsa
+
+# A7 all3 modules=ADown,DyRFAUp,SCSA
+yolo pose train model=src\ultralytics-main\ultralytics\cfg\models\11\yolo11n-pose.yaml data=src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml epochs=50 project=outputs/eval/ablation name=A7_all3

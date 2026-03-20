@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-17 09:27:42",
+  "theme": "yolo_modules",
+  "data_profile": "v17",
+  "layout": "yolopose",
+  "train_config": "configs/train/train_stgcn_out17.yaml",
+  "files": [
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\smoke_filled\\ablation_plan.csv",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\smoke_filled\\ablation_plan.md",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\smoke_filled\\run_commands.txt"
+  ]
+}

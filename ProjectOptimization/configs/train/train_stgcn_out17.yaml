@@ -1,0 +1,29 @@
+work_dir: ../../models/stgcn/out17
+
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  random_choose: true
+  random_move: true
+  window_size: 300
+  data_path: ../../data/stgcn_dataset_out17/stgcn_dataset_out/train_data.npy
+  label_path: ../../data/stgcn_dataset_out17/stgcn_dataset_out/train_label.pkl
+test_feeder_args:
+  data_path: ../../data/stgcn_dataset_out17/stgcn_dataset_out/val_data.npy
+  label_path: ../../data/stgcn_dataset_out17/stgcn_dataset_out/val_label.pkl
+
+model: net.st_gcn.Model
+model_args:
+  in_channels: 3
+  num_class: 10
+  edge_importance_weighting: true
+  graph_args:
+    layout: 'yolopose'
+    strategy: 'spatial'
+
+device: [0]
+batch_size: 64
+test_batch_size: 64
+
+base_lr: 0.01
+step: [20, 30, 40, 50]
+num_epoch: 50

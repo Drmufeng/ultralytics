@@ -1,0 +1,13 @@
+ultralytics==8.3.0
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+numpy==1.26.4
+opencv-python==4.10.0.84
+PyYAML==6.0.2
+tqdm==4.66.5
+matplotlib==3.9.2
+lap>=0.5.12
+einops>=0.8.2
+h5py>=3.10.0
+scikit-video>=1.1.11

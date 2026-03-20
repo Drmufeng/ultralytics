@@ -1,0 +1,26 @@
+{
+  "labels": [
+    "Arguing",
+    "Eating_in_classroom",
+    "Explaining_the_Subject",
+    "HandRaise",
+    "Holding_Book",
+    "Holding_Mobile_Phone",
+    "Reading_Book",
+    "Sitting_on_Desk",
+    "Writing_On_Board",
+    "Writting_on_Textbook"
+  ],
+  "label_to_idx": {
+    "Arguing": 0,
+    "Eating_in_classroom": 1,
+    "Explaining_the_Subject": 2,
+    "HandRaise": 3,
+    "Holding_Book": 4,
+    "Holding_Mobile_Phone": 5,
+    "Reading_Book": 6,
+    "Sitting_on_Desk": 7,
+    "Writing_On_Board": 8,
+    "Writting_on_Textbook": 9
+  }
+}

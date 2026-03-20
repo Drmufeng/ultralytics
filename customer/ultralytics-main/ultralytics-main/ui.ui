@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GrapeDetectionApp</class>
+ <widget class="QMainWindow" name="GrapeDetectionApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>动作识别分类系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #e8f5e9;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="main_layout">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="header_frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #1976D2;
+    border-radius: 8px;
+    border: 1px solid #1E88E5;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>15</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="title_label">
+         <property name="styleSheet">
+          <string notr="true">color: #000000;
+font-size: 24px;
+font-weight: bold;
+padding: 10px;</string>
+         </property>
+         <property name="text">
+          <string>动作识别分类系统</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="top_layout" stretch="1,1">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="original_group">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #1565C0;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 220);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #000000;
+    background-color: white;
+}</string>
+        </property>
+        <property name="title">
+         <string>原始图像</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="original_label">
+           <property name="styleSheet">
+            <string notr="true">border: none; padding: 0px; margin: 0px; color: #000000;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="result_group">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #1565C0;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 220);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #000000;
+    background-color: white;
+}</string>
+        </property>
+        <property name="title">
+         <string>检测结果</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="result_label">
+           <property name="styleSheet">
+            <string notr="true">border: none; padding: 0px; margin: 0px; color: #000000;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="middle_layout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="control_group">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #1565C0;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 220);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #000000;
+    background-color: white;
+}</string>
+        </property>
+        <property name="title">
+         <string>控制面板</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>15</number>
+         </property>
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="upload_btn">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>上传图片</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="detect_btn">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>检测图片</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="camera_btn">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>打开摄像头</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="detect_camera_btn">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>摄像头检测</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="video_btn">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>打开视频</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="detect_video_btn">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>视频检测</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="load_weight_btn">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>加载权重</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="save_image_btn">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background-color: #5c6bc0;
+}
+QPushButton:pressed {
+    background-color: #303f9f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+QPushButton:disabled {
+    background-color: #9fa8da;
+    color: #e8eaf6;
+}</string>
+           </property>
+           <property name="text">
+            <string>保存图片</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="info_group">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #1565C0;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 220);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #000000;
+    background-color: white;
+}</string>
+        </property>
+        <property name="title">
+         <string>检测信息</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>15</number>
+         </property>
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>检测数量:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="count_label">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>检测用时:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="time_label">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>0 s</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_fps">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>FPS:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="fps_label">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>0 FPS</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="bottom_layout" stretch="1,2">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="param_group">
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #1565C0;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 220);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #000000;
+    background-color: white;
+}</string>
+        </property>
+        <property name="title">
+         <string>参数调节</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>15</number>
+         </property>
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>置信度阈值:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="conf_slider">
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 8px;
+    background: #f0f0f0;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+QSlider::handle:horizontal {
+    background: #1565C0;
+    border: 1px solid #0D47A1;
+    width: 18px;
+    margin: -2px 0;
+    border-radius: 9px;
+}
+QSlider::handle:horizontal:hover {
+    background: #1976D2;
+}</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>99</number>
+           </property>
+           <property name="value">
+            <number>25</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QDoubleSpinBox" name="conf_spinbox">
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox {
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 3px;
+    background: white;
+    color: #000000;
+}
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    width: 16px;
+    border-left: 1px solid #999999;
+    background: #1976D2;
+}
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover {
+    background: #1E88E5;
+}
+QDoubleSpinBox::up-button:pressed, QDoubleSpinBox::down-button:pressed {
+    background: #1976D2;
+}</string>
+           </property>
+           <property name="decimals">
+            <number>2</number>
+           </property>
+           <property name="minimum">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>0.990000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.250000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">color: #000000;
+font-size: 18px;
+font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>IOU阈值:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSlider" name="iou_slider">
+           <property name="styleSheet">
+            <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 8px;
+    background: #f0f0f0;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+QSlider::handle:horizontal {
+    background: #1565C0;
+    border: 1px solid #0D47A1;
+    width: 18px;
+    margin: -2px 0;
+    border-radius: 9px;
+}
+QSlider::handle:horizontal:hover {
+    background: #1976D2;
+}</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>99</number>
+           </property>
+           <property name="value">
+            <number>45</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QDoubleSpinBox" name="iou_spinbox">
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox {
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 3px;
+    background: white;
+    color: #000000;
+}
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    width: 16px;
+    border-left: 1px solid #999999;
+    background: #1976D2;
+}
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover {
+    background: #1E88E5;
+}
+QDoubleSpinBox::up-button:pressed, QDoubleSpinBox::down-button:pressed {
+    background: #1976D2;
+}</string>
+           </property>
+           <property name="decimals">
+            <number>2</number>
+           </property>
+           <property name="minimum">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>0.990000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.450000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="result_table_group">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #1565C0;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 220);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #000000;
+    background-color: white;
+}</string>
+        </property>
+        <property name="title">
+         <string>检测结果列表</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="result_table">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>250</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    background-color: rgba(255, 255, 255, 220);
+    alternate-background-color: rgba(240, 240, 240, 220);
+    border: none;
+    gridline-color: #d0d0d0;
+    selection-background-color: #1565C0;
+    selection-color: white;
+}
+QTableWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #000000;
+    font-size: 16px;
+}
+QTableWidget::item:selected {
+    background-color: #1565C0;
+    color: white;
+}
+QHeaderView::section {
+    background-color: #1565C0;
+    color: #000000;
+    padding: 8px;
+    border: 1px solid #0D47A1;
+    font-weight: bold;
+    font-size: 16px;
+}
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 12px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #1976D2;
+    min-height: 20px;
+    border-radius: 6px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #1E88E5;
+}</string>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>40</number>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>类别</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>置信度</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>位置</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>检测类型</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

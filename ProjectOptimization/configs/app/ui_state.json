@@ -1,0 +1,13 @@
+{
+  "recent_ablation_dirs": [
+    "C:\\Users\\YiLanQiu\\Desktop\\tsst"
+  ],
+  "recent_ablation_model_yaml": [
+    "B:\\ultralytics\\ProjectOptimization\\src\\ultralytics-main\\ultralytics\\cfg\\models\\11\\yolo11.yaml",
+    "B:\\ultralytics\\ProjectOptimization\\src\\ultralytics-main\\ultralytics\\cfg\\models\\11\\a-yolo11-MAN-Faster.yaml"
+  ],
+  "recent_ablation_data_yaml": [
+    "B:\\ultralytics\\ProjectOptimization\\src\\ultralytics-main\\ultralytics\\cfg\\datasets\\african-wildlife.yaml",
+    "B:\\ultralytics\\ProjectOptimization\\src\\ultralytics-main\\ultralytics\\cfg\\datasets\\coco-pose.yaml"
+  ]
+}

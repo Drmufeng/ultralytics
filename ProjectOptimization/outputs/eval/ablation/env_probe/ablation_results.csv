@@ -1,0 +1,2 @@
+exp_id,status,return_code,duration_sec,started_at,ended_at,log_file,command
+P0,FAILED,127,0.0,2026-03-17 11:53:18,2026-03-17 11:53:18,B:\ultralytics\ProjectOptimization\outputs\eval\ablation\env_probe\run_logs\P0.log,"B:ultralytics.venv310Scriptspython.exe -c ""import ultralytics; print(ultralytics.__file__)"""

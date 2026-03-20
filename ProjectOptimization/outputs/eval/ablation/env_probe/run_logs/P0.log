@@ -1,0 +1,7 @@
+[CMD] B:ultralytics.venv310Scriptspython.exe -c "import ultralytics; print(ultralytics.__file__)"
+[START] 2026-03-17 11:53:18
+[STREAM]
+[ERROR] [P0] 启动失败: [WinError 2] 系统找不到指定的文件。
+[RETURN_CODE] 127
+[END] 2026-03-17 11:53:18
+[DURATION_SEC] 0.0

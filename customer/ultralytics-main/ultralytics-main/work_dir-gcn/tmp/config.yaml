@@ -1,0 +1,24 @@
+# command line: main.py demo_offline --video resource/media/skateboarding.mp4
+
+config: ./config/st_gcn/kinetics-skeleton/demo_offline.yaml
+device:
+- 0
+height: 1080
+ignore_weights: []
+model: net.st_gcn.Model
+model_args:
+    edge_importance_weighting: true
+    graph_args:
+        layout: openpose
+        strategy: spatial
+    in_channels: 3
+    num_class: 400
+model_fps: 30
+model_input_frame: 128
+openpose: null
+print_log: false
+save_log: true
+use_gpu: true
+video: resource/media/skateboarding.mp4
+weights: ./models/st_gcn.kinetics.pt
+work_dir: ./work_dir/tmp

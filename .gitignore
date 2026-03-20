@@ -1,0 +1,16 @@
+# Virtual environments
+.venv310/
+
+# IDE
+.idea/
+**/.idea/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+
+# OS files
+Thumbs.db
+.DS_Store

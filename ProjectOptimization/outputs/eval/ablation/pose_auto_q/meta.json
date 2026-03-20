@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-03-17 09:46:37",
+  "theme": "yolo_modules",
+  "data_profile": "v17",
+  "layout": "yolopose",
+  "train_config": "configs/train/train_stgcn_out17.yaml",
+  "model_mode": "generated",
+  "model_yaml_input": "src\\ultralytics-main\\ultralytics\\cfg\\models\\11\\yolo11-pose.yaml",
+  "data_yaml_input": "B:\\ultralytics\\ProjectOptimization\\src\\ultralytics-main\\ultralytics\\cfg\\datasets\\coco-pose.yaml",
+  "files": [
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\pose_auto_q\\ablation_plan.csv",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\pose_auto_q\\ablation_plan.md",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\pose_auto_q\\run_commands.txt"
+  ]
+}

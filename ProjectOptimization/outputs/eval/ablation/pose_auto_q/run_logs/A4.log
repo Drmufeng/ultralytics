@@ -1,0 +1,1 @@
+[DRY_RUN] B:\ultralytics\.venv310\Scripts\yolo.exe pose train model=\"B:\ultralytics\ProjectOptimization\outputs\eval\ablation\pose_auto_q\generated_models\A4_adown+dyrfaup.yaml\" data=\"B:\ultralytics\ProjectOptimization\src\ultralytics-main\ultralytics\cfg\datasets\coco-pose.yaml\" epochs=10 project=outputs/eval/ablation name=A4_adown+dyrfaup

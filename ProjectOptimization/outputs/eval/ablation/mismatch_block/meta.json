@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-17 11:32:41",
+  "theme": "yolo_modules",
+  "data_profile": "v17",
+  "layout": "yolopose",
+  "train_config": "configs/train/train_stgcn_out17.yaml",
+  "model_mode": "generated",
+  "model_category": "POSE",
+  "data_category": "POSE",
+  "task_name": "pose",
+  "model_yaml_input": "src\\ultralytics-main\\ultralytics\\cfg\\models\\11\\a-yolo11-MAN-Faster.yaml",
+  "data_yaml_input": "B:\\ultralytics\\ProjectOptimization\\src\\ultralytics-main\\ultralytics\\cfg\\datasets\\coco-pose.yaml",
+  "files": [
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\mismatch_block\\ablation_plan.csv",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\mismatch_block\\ablation_plan.md",
+    "B:\\ultralytics\\ProjectOptimization\\outputs\\eval\\ablation\\mismatch_block\\run_commands.txt"
+  ]
+}

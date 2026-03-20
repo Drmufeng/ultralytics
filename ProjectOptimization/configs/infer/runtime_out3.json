@@ -1,0 +1,21 @@
+{
+  "yolo_pose_weights": "../../models/yolo/custom/yolo_pose_best.pt",
+  "stgcn_weights": "../../models/stgcn/out3/best.pt",
+  "video_path": "dataset/GCNData/BaseballPitch/v_BaseballPitch_g04_c01.avi",
+  "save_path": "../../outputs/infer/output_multi_action_out3.mp4",
+  "tracker_yaml": "bytetrack.yaml",
+  "label_map_path": "../../data/stgcn_dataset_out3/label_map.json",
+  "num_class": 10,
+  "in_channels": 3,
+  "window_size": 30,
+  "stride": 5,
+  "class_names": [],
+  "person_conf_thres": 0.25,
+  "kpt_conf_thres": 0.3,
+  "max_missing_frames": 30,
+  "min_valid_kpts": 3,
+  "show_window": true,
+  "graph_layout": "yolopose",
+  "graph_strategy": "spatial",
+  "device": "cuda"
+}

@@ -1,0 +1,1 @@
+B:ultralytics.venv310Scriptspython.exe -c "import ultralytics; print(ultralytics.__file__)"

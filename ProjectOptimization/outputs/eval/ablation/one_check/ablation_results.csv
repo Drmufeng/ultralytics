@@ -1,0 +1,2 @@
+exp_id,status,return_code,duration_sec,started_at,ended_at,log_file,command
+ONE,FAILED,1,2.04,2026-03-17 11:37:05,2026-03-17 11:37:07,B:\ultralytics\ProjectOptimization\outputs\eval\ablation\one_check\run_logs\ONE.log,"""B:\ultralytics\.venv310\Scripts\yolo.exe"" pose train model=C:UsersYiLanQiuDesktoptsstgenerated_modelsA0_baseline.yaml data=B:ultralyticsProjectOptimizationsrcultralytics-mainultralyticscfgdatasetscoco-pose.yaml epochs=1 project=outputs/eval/ablation name=ONE_CHECK"

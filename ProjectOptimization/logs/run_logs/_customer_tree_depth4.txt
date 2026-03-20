@@ -1,0 +1,392 @@
+./
+  - stgcn_dataset_out.zip
+  - stgcn_dataset_out3.rar
+  - ultralytics-main.zip
+  stgcn_dataset_out3/
+    stgcn_dataset_out3/
+      - label_map.json
+      - train_data_c3v18.npy
+      - train_label.pkl
+      - val_data_c3v18.npy
+      - val_label.pkl
+  ultralytics-main/
+    ultralytics-main/
+      - .dockerignore
+      - .gitignore
+      - 2.mp4
+      - 3.mp4
+      - CITATION.cff
+      - CONTRIBUTING.md
+      - LICENSE
+      - LICENSE-gcn
+      - README.md
+      - README.zh-CN.md
+      - best.pt
+      - detection.py
+      - label.py
+      - main.py
+      - mkdocs.yml
+      - mytrain.py
+      - myval.py
+      - output_image.jpg
+      - output_multi_action.mp4
+      - pyproject.toml
+      ... (7 more files)
+      .github/
+        - dependabot.yml
+        ISSUE_TEMPLATE/
+          - bug-report.yml
+          - config.yml
+          - feature-request.yml
+          - question.yml
+        workflows/
+          - ci.yml
+          - cla.yml
+          - docker.yml
+          - docs.yml
+          - format.yml
+          - links.yml
+          - merge-main-into-prs.yml
+          - mirror.yml
+          - publish.yml
+          - stale.yml
+      .idea/
+        - .gitignore
+        - deployment.xml
+        - misc.xml
+        - modules.xml
+        - ultralytics-main.iml
+        - workspace.xml
+        inspectionProfiles/
+          - Project_Default.xml
+          - profiles_settings.xml
+      .pytest_cache/
+        - .gitignore
+        - CACHEDIR.TAG
+        - README.md
+        v/
+      __pycache__/
+      config/
+        st_gcn/
+        st_gcn.twostream/
+      dataset/
+        COCO/
+          - 000000000036.jpg
+        GCNData/
+      docker/
+        - Dockerfile
+        - Dockerfile-arm64
+        - Dockerfile-conda
+        - Dockerfile-cpu
+        - Dockerfile-export
+        - Dockerfile-jetson-jetpack4
+        - Dockerfile-jetson-jetpack5
+        - Dockerfile-jetson-jetpack6
+        - Dockerfile-jupyter
+        - Dockerfile-python
+        - Dockerfile-python-export
+        - Dockerfile-runner
+      docs/
+        - README.md
+        - build_docs.py
+        - build_reference.py
+        - coming_soon_template.md
+        - mkdocs_github_authors.yaml
+        - model_data.py
+        en/
+          - CNAME
+          - index.md
+          - quickstart.md
+          - robots.txt
+        overrides/
+          - main.html
+      examples/
+        - README.md
+        - heatmaps.ipynb
+        - hub.ipynb
+        - object_counting.ipynb
+        - object_tracking.ipynb
+        - tutorial.ipynb
+        RTDETR-ONNXRuntime-Python/
+          - README.md
+          - main.py
+          - requirements.txt
+        YOLO-Interactive-Tracking-UI/
+          - README.md
+          - interactive_tracker.py
+        YOLO-Series-ONNXRuntime-Rust/
+          - Cargo.toml
+          - README.md
+        YOLO11-Triton-CPP/
+          - CMakeLists.txt
+          - README.md
+          - inference.cpp
+          - inference.hpp
+          - main.cpp
+        YOLOv8-Action-Recognition/
+          - README.md
+          - action_recognition.py
+          - requirements.txt
+        YOLOv8-CPP-Inference/
+          - CMakeLists.txt
+          - README.md
+          - inference.cpp
+          - inference.h
+          - main.cpp
+        YOLOv8-LibTorch-CPP-Inference/
+          - CMakeLists.txt
+          - README.md
+          - main.cc
+        YOLOv8-MNN-CPP/
+          - CMakeLists.txt
+          - README.md
+          - main.cpp
+          - main_interpreter.cpp
+        YOLOv8-ONNXRuntime/
+          - README.md
+          - main.py
+        YOLOv8-ONNXRuntime-CPP/
+          - CMakeLists.txt
+          - README.md
+          - inference.cpp
+          - inference.h
+          - main.cpp
+        YOLOv8-ONNXRuntime-Rust/
+          - Cargo.toml
+          - README.md
+        YOLOv8-OpenCV-ONNX-Python/
+          - README.md
+          - main.py
+        YOLOv8-OpenVINO-CPP-Inference/
+          - CMakeLists.txt
+          - README.md
+          - inference.cc
+          - inference.h
+          - main.cc
+        YOLOv8-Region-Counter/
+          - README.md
+          - yolov8_region_counter.py
+        YOLOv8-SAHI-Inference-Video/
+          - README.md
+          - yolov8_sahi.py
+        YOLOv8-Segmentation-ONNXRuntime-Python/
+          - README.md
+          - main.py
+        YOLOv8-TFLite-Python/
+          - README.md
+          - main.py
+      feeder/
+        - __init__.py
+        - feeder.py
+        - feeder_kinetics.py
+        - tools.py
+        __pycache__/
+          - __init__.cpython-38.pyc
+          - feeder.cpython-38.pyc
+          - feeder_kinetics.cpython-38.pyc
+          - tools.cpython-38.pyc
+      models/
+        - st_gcn.kinetics.pt
+        pose/
+      net/
+        - __init__.py
+        - st_gcn.py
+        - st_gcn_twostream.py
+        __pycache__/
+          - __init__.cpython-310.pyc
+          - __init__.cpython-38.pyc
+          - st_gcn.cpython-310.pyc
+          - st_gcn.cpython-38.pyc
+        utils/
+          - __init__.py
+          - graph.py
+          - tgcn.py
+      path_to_your_model/
+        - yolo11n-pose.pt
+      processor/
+        - __init__.py
+        - demo_offline.py
+        - demo_old.py
+        - demo_realtime.py
+        - io.py
+        - processor.py
+        - recognition.py
+        __pycache__/
+          - __init__.cpython-38.pyc
+          - demo_offline.cpython-38.pyc
+          - demo_old.cpython-38.pyc
+          - demo_realtime.cpython-38.pyc
+          - io.cpython-38.pyc
+          - processor.cpython-38.pyc
+          - recognition.cpython-38.pyc
+      resource/
+        - kinetics-motion.txt
+        - reference_model.txt
+        NTU-RGB-D/
+          - samples_with_missing_skeletons.txt
+        demo_asset/
+          - attention+prediction.png
+          - attention+rgb.png
+          - original_video.png
+          - pose_estimation.png
+        info/
+          - S001C001P001R001A044_w.gif
+          - S001C001P001R001A051_w.gif
+          - S002C001P010R001A017_w.gif
+          - S003C001P008R001A002_w.gif
+          - S003C001P008R001A008_w.gif
+          - clean_and_jerk_w.gif
+          - demo_video.gif
+          - hammer_throw_w.gif
+          - juggling_balls_w.gif
+          - pipeline.png
+          - pull_ups_w.gif
+          - tai_chi_w.gif
+        kinetics_skeleton/
+          - label_name.txt
+        media/
+          - clean_and_jerk.mp4
+          - skateboarding.mp4
+          - ta_chi.mp4
+      runs/
+        pose/
+      tests/
+        - __init__.py
+        - conftest.py
+        - test_cli.py
+        - test_cuda.py
+        - test_engine.py
+        - test_exports.py
+        - test_integrations.py
+        - test_python.py
+        - test_solutions.py
+      tools/
+        - __init__.py
+        - get_models.sh
+        - kinetics_gendata.py
+        - my_gendat.py
+        - ntu_gendata.py
+        - tracking_adapter.py
+        __pycache__/
+          - __init__.cpython-38.pyc
+        runs/
+        utils/
+          - __init__.py
+          - ntu_read_skeleton.py
+          - openpose.py
+          - video.py
+          - visualization.py
+      torchlight/
+        - __init__.py
+        - setup.py
+        __pycache__/
+          - __init__.cpython-38.pyc
+        torchlight/
+          - __init__.py
+          - gpu.py
+          - io.py
+      tracker/
+        - __init__.py
+        - tracker.py
+      ultralytics/
+        - __init__.py
+        - py.typed
+        __pycache__/
+          - __init__.cpython-310.pyc
+          - __init__.cpython-38.pyc
+        assets/
+          - bus.jpg
+          - zidane.jpg
+        cfg/
+          - __init__.py
+          - default.yaml
+        data/
+          - __init__.py
+          - annotator.py
+          - augment.py
+          - base.py
+          - build.py
+          - converter.py
+          - dataset.py
+          - loaders.py
+          - split.py
+          - split_dota.py
+          - utils.py
+        engine/
+          - __init__.py
+          - exporter.py
+          - model.py
+          - predictor.py
+          - results.py
+          - trainer.py
+          - tuner.py
+          - validator.py
+        hub/
+          - __init__.py
+          - auth.py
+          - session.py
+          - utils.py
+        models/
+          - __init__.py
+        nn/
+          - __init__.py
+          - autobackend.py
+          - tasks.py
+          - text_model.py
+        solutions/
+          - __init__.py
+          - ai_gym.py
+          - analytics.py
+          - config.py
+          - distance_calculation.py
+          - heatmap.py
+          - instance_segmentation.py
+          - object_blurrer.py
+          - object_counter.py
+          - object_cropper.py
+          - parking_management.py
+          - queue_management.py
+          - region_counter.py
+          - security_alarm.py
+          - similarity_search.py
+          - solutions.py
+          - speed_estimation.py
+          - streamlit_inference.py
+          - trackzone.py
+          - vision_eye.py
+        trackers/
+          - README.md
+          - __init__.py
+          - basetrack.py
+          - bot_sort.py
+          - byte_tracker.py
+          - track.py
+        utils/
+          - __init__.py
+          - autobatch.py
+          - autodevice.py
+          - benchmarks.py
+          - checks.py
+          - cpu.py
+          - dist.py
+          - downloads.py
+          - errors.py
+          - events.py
+          - files.py
+          - git.py
+          - instance.py
+          - logger.py
+          - loss.py
+          - metrics.py
+          - nms.py
+          - ops.py
+          - patches.py
+          - plotting.py
+          ... (5 more files)
+      work_dir/
+        recognition/
+      work_dir-gcn/
+        recognition/
+        tmp/
+          - config.yaml
+          - log.txt
