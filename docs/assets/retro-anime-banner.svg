@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="170" viewBox="0 0 760 170" role="img" aria-labelledby="title desc">
+  <title id="title">Retro anime style project decoration</title>
+  <desc id="desc">Pastel hand-drawn stars, ribbon and a small cat mascot.</desc>
+  <defs>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#2E294E" opacity=".18"/>
+    </pattern>
+  </defs>
+  <rect x="8" y="8" width="744" height="154" rx="30" fill="#F8F0FF" stroke="#2E294E" stroke-width="2" opacity=".98"/>
+  <path d="M32 123 C120 82 175 148 268 111 S425 78 520 112 S650 137 720 90" fill="none" stroke="#F9C5D1" stroke-width="8" stroke-linecap="round" opacity=".62"/>
+  <path d="M28 126 C118 87 174 151 268 114 S425 81 520 115 S650 140 725 93" fill="none" stroke="#C7D2FE" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 9" opacity=".9"/>
+  <rect x="30" y="30" width="280" height="110" rx="24" fill="url(#dots)"/>
+  <g stroke="#2E294E" stroke-linejoin="round">
+    <path d="M83 38 l6 15 16 1-12 10 4 16-14-8-14 8 4-16-12-10 16-1z" fill="#F4B942" stroke-width="2"/>
+    <path d="M184 39 l4 10 11 1-8 7 3 11-10-6-10 6 3-11-8-7 11-1z" fill="#C7D2FE" stroke-width="2"/>
+    <path d="M248 80 l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z" fill="#F9C5D1" stroke-width="2"/>
+  </g>
+  <g transform="translate(367 68)" stroke="#2E294E" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M0 23 C-24 3-44 13-39 33 C-35 48-17 45 0 31 C17 45 35 48 39 33 C44 13 24 3 0 23z" fill="#F9C5D1"/>
+    <circle cx="0" cy="27" r="8" fill="#F4B942"/>
+    <path d="M-1 18 C-10 7-18 1-29 7" fill="none" stroke="#C7D2FE" stroke-width="4"/>
+    <path d="M1 18 C10 7 18 1 29 7" fill="none" stroke="#C7D2FE" stroke-width="4"/>
+  </g>
+  <g transform="translate(600 33)" stroke="#2E294E" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M-42 35 L-29 4 L-6 20 L20 5 L35 38 C39 70 18 92 -5 92 C-31 92 -48 70 -42 35z" fill="#C7D2FE"/>
+    <path d="M-42 35 L-29 4 L-6 20 L20 5 L35 38 C20 27 8 24 -5 25 C-20 24 -31 27 -42 35z" fill="#F9C5D1"/>
+    <ellipse cx="-17" cy="54" rx="5" ry="8" fill="#2E294E" stroke="none"/>
+    <ellipse cx="14" cy="54" rx="5" ry="8" fill="#2E294E" stroke="none"/>
+    <circle cx="-19" cy="51" r="1.7" fill="white" stroke="none"/>
+    <circle cx="12" cy="51" r="1.7" fill="white" stroke="none"/>
+    <path d="M-6 68 q6 6 12 0" fill="none"/>
+    <path d="M-35 67 q8-5 14 1 M18 68 q8-6 14-1" fill="none" stroke="#F9C5D1" stroke-width="4"/>
+    <path d="M-31 82 C-20 72 -9 76 0 85 C10 76 21 72 31 82 C24 98 -23 98 -31 82z" fill="#F4B942"/>
+  </g>
+  <g fill="#2E294E" opacity=".72"><circle cx="504" cy="38" r="3"/><circle cx="526" cy="31" r="2"/><circle cx="545" cy="45" r="4"/></g>
+</svg>
