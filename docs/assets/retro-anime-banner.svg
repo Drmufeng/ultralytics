@@ -1,22 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
-  <title id="title">姿态与动作识别复古动画装饰</title>
-  <desc id="desc">带胶片边框、动态人物和动作线的复古二次元横幅。</desc>
-  <rect x="8" y="8" width="744" height="164" rx="26" fill="#EEE7F8" stroke="#352D46" stroke-width="3"/>
-  <path d="M30 141 Q160 105 277 139 T514 137 T733 126" fill="none" stroke="#F19A9A" stroke-width="10" opacity=".55"/>
-  <path d="M30 145 Q160 109 277 143 T514 141 T733 130" fill="none" stroke="#7DA6D6" stroke-width="3" stroke-dasharray="4 8"/>
-  <g transform="translate(53 38)" stroke="#352D46" stroke-width="3" stroke-linejoin="round">
-    <rect x="0" y="0" width="132" height="92" rx="10" fill="#FFF5E8"/><path d="M15 14 H27 M15 78 H27 M105 14 H117 M105 78 H117" stroke-width="7"/>
-    <circle cx="66" cy="42" r="9" fill="#F19A9A"/><path d="M66 51 L53 67 L78 67z M53 55 L36 46 M77 55 L98 45" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" role="img" aria-labelledby="pose-title pose-desc">
+  <title id="pose-title">Pose tracking and action recognition workflow</title>
+  <desc id="pose-desc">A pipeline connecting video frames, YOLO pose landmarks, ByteTrack identities, and ST-GCN action classes.</desc>
+  <defs><marker id="pose-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#64748B"/></marker></defs>
+  <rect x="8" y="8" width="744" height="164" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <g stroke="#94A3B8" stroke-width="2" marker-end="url(#pose-arrow)"><path d="M172 104H198"/><path d="M354 104H380"/><path d="M536 104H562"/></g>
+  <text x="28" y="34" fill="#0F172A" font-family="Arial,sans-serif" font-size="18" font-weight="700">POSE → TRACK → ACT</text>
+  <text x="28" y="54" fill="#64748B" font-family="Arial,sans-serif" font-size="11">YOLO Pose · ByteTrack · ST-GCN</text>
+  <g font-family="Arial,sans-serif" font-size="11" fill="#0F172A">
+    <rect x="28" y="72" width="144" height="64" rx="8" fill="#F8FAFC" stroke="#94A3B8"/>
+    <rect x="45" y="84" width="42" height="32" fill="#E2E8F0" stroke="#475569" stroke-width="2"/><path d="M51 108 l10-12 8 8 9-10" fill="none" stroke="#475569" stroke-width="2"/><text x="99" y="108">video frames</text>
+    <rect x="200" y="72" width="154" height="64" rx="8" fill="#EFF6FF" stroke="#93C5FD"/>
+    <circle cx="238" cy="87" r="7" fill="#60A5FA"/><path d="M238 95l-10 20m10-20 12 17m-12-9-16-7m16 7 18-5" fill="none" stroke="#2563EB" stroke-width="3"/><rect x="221" y="78" width="35" height="46" fill="none" stroke="#2563EB" stroke-width="1.5"/><text x="267" y="108">17 / 18 keypoints</text>
+    <rect x="382" y="72" width="154" height="64" rx="8" fill="#F0FDFA" stroke="#5EEAD4"/>
+    <circle cx="415" cy="91" r="6" fill="#14B8A6"/><circle cx="449" cy="99" r="6" fill="#14B8A6"/><path d="M415 91 Q432 76 449 99" fill="none" stroke="#0F766E" stroke-width="2"/><path d="M404 121 Q432 105 462 119" fill="none" stroke="#0F766E" stroke-width="2"/><text x="476" y="108">track IDs</text>
+    <rect x="564" y="72" width="168" height="64" rx="8" fill="#FFF7ED" stroke="#FDBA74"/>
+    <g stroke="#C2410C" stroke-width="2"><circle cx="593" cy="89" r="4" fill="#FB923C"/><circle cx="623" cy="99" r="4" fill="#FB923C"/><circle cx="651" cy="88" r="4" fill="#FB923C"/><circle cx="604" cy="116" r="4" fill="#FB923C"/><path d="M593 89L623 99 651 88M623 99L604 116" fill="none"/></g><text x="674" y="108">action class</text>
   </g>
-  <g transform="translate(430 32)" stroke="#352D46" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="0" cy="22" r="15" fill="#F6C7A8"/><path d="M-14 17 Q0 -2 15 17" fill="#F19A9A"/>
-    <path d="M0 37 L-13 78 L14 78z" fill="#7DA6D6"/><path d="M-8 49 L-42 35 M9 49 L43 22 M-8 77 L-35 106 M10 77 L36 97" fill="none"/>
-    <path d="M-56 21 q-14 17 0 34 M-69 11 q-23 28 0 55 M57 15 q16 17 0 34" fill="none" stroke="#F19A9A"/>
-  </g>
-  <g transform="translate(595 38)" stroke="#352D46" stroke-width="3" stroke-linejoin="round">
-    <path d="M0 2 L10 25 L35 28 L16 44 L21 69 L0 56 L-21 69 L-16 44 L-35 28 L-10 25z" fill="#F4B942"/>
-    <path d="M-48 86 Q0 57 48 86 M-58 101 H58" fill="none" stroke="#7DA6D6" stroke-width="5"/>
-  </g>
-  <text x="226" y="47" fill="#352D46" font-size="21" font-family="cursive" font-weight="700">POSE TO ACT</text>
-  <text x="226" y="72" fill="#352D46" font-size="14" font-family="sans-serif">POSE · TRACK · ACTION</text>
 </svg>

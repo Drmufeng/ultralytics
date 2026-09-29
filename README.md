@@ -2,6 +2,16 @@
 
 <p align="center"><img src="docs/assets/retro-anime-banner.svg" alt="姿态检测与动作识别主题装饰" width="760"></p>
 
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white)](ProjectOptimization/env/requirements-py310.txt)
+[![PyQt5](https://img.shields.io/badge/UI-PyQt5-41CD52?style=flat-square)](ProjectOptimization/ui/qt5)
+[![License](https://img.shields.io/badge/License-MIT-2D8CFF?style=flat-square)](LICENSE)
+
+</div>
+
+## 项目介绍
+
 这个仓库把人体姿态检测、多人跟踪和动作分类串成一条视频处理流程。YOLO Pose 提取人体框和关键点，ByteTrack 在连续画面中维护人员 ID，ST-GCN 根据关键点序列判断动作。
 
 日常开发集中在 ProjectOptimization/。里面有训练、推理、数据检查和 PyQt5 控制台；customer/ 保留原始代码和数据基线，默认只读。
@@ -117,6 +127,15 @@ python scripts/train/train_stgcn_pretrain.py --config configs/train/train_stgcn_
 - 推理视频：ProjectOptimization/outputs/infer/
 - 运行日志：ProjectOptimization/logs/run_logs/
 
+### 从哪里开始
+
+| 你准备做什么 | 建议入口 |
+| --- | --- |
+| 第一次运行项目 | 启动 PyQt5 控制台，先做环境和数据检查 |
+| 运行视频推理 | ProjectOptimization/scripts/infer/run_pose_stgcn.py |
+| 训练动作分类器 | ProjectOptimization/scripts/train/ |
+| 查看完整说明 | [中文项目手册](PROJECT_GUIDE_ZH.md) |
+
 ## 文档
 
 - [完整中文项目手册](PROJECT_GUIDE_ZH.md)
@@ -125,3 +144,7 @@ python scripts/train/train_stgcn_pretrain.py --config configs/train/train_stgcn_
 - [UI 使用指南](ProjectOptimization/docs/ui_user_guide_zh.md)
 - [模型清单](ProjectOptimization/docs/model_inventory.md)
 - [迁移与重构日志](ProjectOptimization/docs/migration_log.md)
+
+## 许可
+
+本项目采用 [MIT License](LICENSE)。模型权重、数据集和第三方依赖按各自的许可证使用。
